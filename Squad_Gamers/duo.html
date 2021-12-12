@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duo Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="duostyle.css">
+</head>
+<body>
+    <div class="duo-regi">
+      <nav class="navbar  navbar-expand-md navbar-dark bg-dark">
+        <a href="index.php" class="brand-link">
+          <span class="brand-text font-weight-bold"><i class="fas fa-1.5x fa-dragon">4Gamers</i></span>
+      </a>
+      <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link text-light"  href="index.php">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link text-light dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Register Now</a>
+            <div class="dropdown-menu" aria-labelledby="#navbarDropdown">
+             <a class="dropdown-item" href="solo.html" >Solo</a>
+              <div class="dropdown-item" href="#"></div>
+              <a href="duo.html" class="dropdown-item">Duo</a>
+              <div class="dropdown-item" href="#"></div>
+              <a href="squad.html" class="dropdown-item">Squad</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </nav>
+           
+      <div class="duo-form">
+      <div class=" duo-form-box" id="box-1">
+        <h3 class="text-center  display-2"> <span>Duo</span> Registration</h3>
+        <div class=" duo-socical-icons">
+            <a class="text-muted" href="#"><i class="fab fa-cog fa-2x  fa-facebook-square"></i></a>
+            <a class="text-muted" href="#"><i class="fab  fa-cog fa-2x fa-twitter"  ></i></a>
+            <a class="text-muted" href="#"><i class="fab fa-cog fa-2x fa-instagram"  ></i></a>
+        </div>
+
+        
+        <form class=" duo-input-group" id="duo" action="duo.php" method="post">
+            <input type="text" class="duo-input-field" name="duoevnt" placeholder="Event Name" autocomplete="off" required>
+            <input type="text" class="duo-input-field"  name="dgrpnm" placeholder="squard Name"autocomplete="off" required>
+            <input type="text" class="duo-input-field"  name="dpnm" placeholder="player Name"autocomplete="off" required>
+            <input type="text" class="duo-input-field"  name="dpid" placeholder="player ID"autocomplete="off" required>
+            <input type="text" class="duo-input-field"  name="dspnm" placeholder="Second player Name" autocomplete="off" required >
+            <input type="text" class="duo-input-field" name="dspid" placeholder="Second player ID" autocomplete="off" required>
+            <button type="submit" class="duo-submit-btn" value="duo.php" name="duosub">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

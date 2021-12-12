@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solo registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styleso.css" type="text/css">
+</head>
+<body>
+  <div class="solo-regi"> 
+    <nav class="navbar  navbar-expand-md navbar-dark bg-dark">
+      <a href="index.php" class="brand-link">
+        <span class="brand-text font-weight-bold"><i class="fas fa-1.5x fa-dragon">4Gamers</i></span>
+    </a>
+    <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link text-light"  href="index.php">Home</a></li>
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link text-light dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Register Now</a>
+          <div class="dropdown-menu" aria-labelledby="#navbarDropdown">
+           <a class="dropdown-item" href="solo.html" >Solo</a>
+            <div class="dropdown-item" href="#"></div>
+            <a href="duo.html" class="dropdown-item">Duo</a>
+            <div class="dropdown-item" href="#"></div>
+            <a href="squad.html" class="dropdown-item">Squad</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </nav>
+         
+  <div class="solo-form" style="height: auto;" >
+      <div class=" solo-form-box " id="box">
+        <h3> <span>solo</span> Registration</h3> 
+        <div class=" solo-socical-icons  d-flex justify-content-center">
+            <a class="text-muted" href="#"><i class="fab fa-cog fa-2x fa-facebook-square"></i></a>
+            <a class="text-muted" href="#"><i class="fab fa-cog fa-2x fa-twitter" ></i></a>
+            <a class="text-muted" href="#"><i class="fab fa-cog fa-2x fa-instagram" ></i></a>
+        </div>
+      <p id="error" style="color: aliceblue;"></p>
+   
+        <form class=" solo-input-group" id="solo" action="solo.php" method="post" onsubmit="return vcontect()">
+            <span id="error"></span>
+           <input type="text" class="solo-input-field form-control"  name="Evname" placeholder="EventName" autocomplete="off" required>
+           <input type="text" class="solo-input-field form-control" name="pname" placeholder="PlayerName" autocomplete="off" required>
+           <input type="text" class="solo-input-field form-control" name="pid" placeholder="playerID"autocomplete="off" required>
+           <input type="text" class="solo-input-field form-control" id="eid" name="eid" placeholder="Email"autocomplete="off" required>
+           
+           <input type="text" class="solo-input-field form-control" id="contect" name="contact" placeholder="Contact"autocomplete="off" required>
+           
+           <button type="submit"  class="solo-submit-btn btn-block" value="solo.php" name="solosub">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+const email = document.getElementById('eid');
+const form = document.getElementById('solo');
+const number = document.getElementById('contect');
+const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const errorEle = document.getElementById('error')
+form.addEventListener('submit', (e)=>{
+  let messages = []
+  
+  if(!regex.test(email.value)){
+      messages.push('Email is Not valid')
+    }
+  if(isNaN(number.value) || number.value.length > 10 || number.value.length < 10){
+    messages.push('Enter Valid Number')
+  }
+  
+  if(messages.length > 0){
+    e.preventDefault()
+    errorEle.innerText = messages.join(',')
+    errorEle.style.color = 'red';
+    errorEle.style.textAlign = 'center';
+  }
+  else{
+    messages.push('Regisretion Sucess..')
+    errorEle.innerText = messages.join(',')
+    errorEle.style.color = 'red';
+    errorEle.style.textAlign = 'center';
+  }
+})
+
+
+  // email.onkeydown = function(){
+  //   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  //   // const regexo = /^([\.\_a-zA-z0-9]+)@([a-zA-Z]+)\.([a-zA-Z])(2,3)\.[a-zA-Z](1,3)$/;
+  //   if(regex.test(email.value)){
+  //     eml_msg.innerText = "Invalid  EMail Id!.."
+  //     eml_msg.style.color = "lime"; 
+  //     eml_msg.style.font = "6px";
+  //   }
+  //   else{
+  //     eml_msg.innerText = "email should be valid";
+  //     eml_msg.style.color = "aqua"; 
+  //     eml_msg.style.font = "6px";
+  //   }
+  // }
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

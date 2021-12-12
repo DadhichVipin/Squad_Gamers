@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>squad Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="stylesq.css">
+</head>
+<body>
+    <div class="squad-regi">
+        
+      <nav class="navbar  navbar-expand-md navbar-dark bg-dark">
+        <a href="index.php" class="brand-link">
+          <span class="brand-text font-weight-bold"><i class="fas fa-1.5x fa-dragon">4Gamers</i></span>
+      </a>
+      <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link text-light"  href="index.php">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link text-light dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Register Now</a>
+            <div class="dropdown-menu" aria-labelledby="#navbarDropdown">
+             <a class="dropdown-item" href="solo.html" >Solo</a>
+              <div class="dropdown-item" href="#"></div>
+              <a href="duo.html" class="dropdown-item">Duo</a>
+              <div class="dropdown-item" href="#"></div>
+              <a href="squad.html" class="dropdown-item">Squad</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </nav>
+        
+     
+      <div class="squad-form">
+      <div class=" squad-form-box" id="box-2">
+        <h3 > <span>Squad</span> Registration</h3> 
+        <div class=" squad-socical-icons">
+            <a class="text-muted" href="#"><i class="fab fa-cog fa-2x  fa-facebook-square" ></i></a>
+            <a class="text-muted" href="#"><i class="fab  fa-cog fa-2x fa-twitter"  ></i></a>
+            <a class="text-muted" href="#"><i class="fab fa-cog fa-2x fa-instagram"  ></i></a>
+        </div>
+        <form class=" squad-input-group" id="squad" action="squad.php" method="post">
+            <input type="text" class="squad-input-field" name="sqevnt" placeholder="Event Name" autocomplete="off" required>
+            <input type="text" class="squad-input-field" name="sqgrpnm" placeholder="squard Name" autocomplete="off" required >
+            <input type="text" class="squad-input-field"name="sqpnm" placeholder="Host player Name" autocomplete="off" required>
+            <input type="text" class="squad-input-field" name="sqpid" placeholder="Host player ID"autocomplete="off" required >
+            <input type="text" class="squad-input-field" name="sqspnm" placeholder="Second player Name" autocomplete="off" required >
+            <input type="text" class="squad-input-field" name="sqspid" placeholder="Second player ID"autocomplete="off" required >
+            <input type="text" class="squad-input-field" name="sqtpnm" placeholder="Third player Name"autocomplete="off" required>
+            <input type="text" class="squad-input-field" name="sqtpid" placeholder="Third player ID"autocomplete="off" required >
+            <input type="text" class="squad-input-field" name="sqfpnm" placeholder="Fourth player Name"autocomplete="off" required >
+            <input type="text" class="squad-input-field" name="sqfpid" placeholder="Fourth player ID"autocomplete="off" required>
+            <button type="submit" class="squad-submit-btn" name="sqsub" value="squad.php" >SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

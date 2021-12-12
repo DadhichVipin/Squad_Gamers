@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+body{
+    background:#082929;
+    height: 90vh;
+}
+.solo-regi{
+  height: 10px;
+  width: 100%;
+  position:absolute;
+  top: 0;
+   z-index: 2; 
+   /* background-color: #082929; */
+}
+.brand-text i{
+    color: rgb(151, 234, 255);
+    font-size: 26px;
+    text-decoration: none;
+    margin: 16px 10px 10px 35px;
+  }
+  
+  .navbar-nav{
+    font-size: 20px;
+    padding: 10px ;
+  }
+  
+  .nav-item .nav-link{
+    color: #55acee;
+  }
+  
+  .navbar-dark .navbar-toggler {
+    color: #fff;
+  }
+  
+  .dropdown-menu{
+     position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: 0.5rem 0;
+      margin: 0.125rem 0 0;
+      font-size: 1rem;
+      color: #fff;
+      text-align: left;
+      list-style: none;
+      background-color: rgb(68, 67, 67);
+      background-clip: padding-box;
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: 0.25rem;
+  
+  }
+  
+  
+  
+  .dropdown-item{
+    color: #fff;
+    font-weight:bold;
+    font-size: 18px;
+  }
+
+
+.solo-form-box{
+    width: 350px;
+    height: auto;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0,0,0,0.5);
+    padding: 27px;
+    overflow: hidden;
+}
+
+.fa-facebook-square{
+    color:#4c7fee;
+
+}
+  .fa-twitter{
+    color:#55acee;
+  }
+  .fa-instagram{
+    color:#e95950;
+  }
+
+
+ .solo-form-box h3{
+    
+    text-align: center;
+    margin-top:10px ;
+    border-radius: 10px;
+    border: -14px solid white;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #082929;
+   
+} 
+.solo-form-box h3 > span{
+    color: rgb(255, 74, 74);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.solo-socical-icons{
+    margin: 30px auto;
+    text-align: center;
+    padding: 0px 20px;
+    
+
+}
+
+.solo-input-field{
+    
+    font-size: 15px; 
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+  
+}
+
+.solo-submit-btn{
+    width: 100%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    background: linear-gradient(to right, #ff105f, #ffab06);
+    border: 0;
+    outline: none;
+}
+
+@media screen and (max-width: 300px){
+
+    .navbar{
+        width: 330px;
+      }
+    
+    .solo-form-box{
+        width: 330px;
+    }
+    .solo-socical-icons{
+        margin-left: 0;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .dropdown-menu{
+   
+        left: 0;
+        float: left;
+        width: 100%;
+        /* padding: 0.5rem 0;
+        margin: 0.125rem 0 0; */
+        font-size:18px;
+        color: #fff;
+        text-align: left;
+        list-style: none;
+        background-color: rgb(66, 66, 66);
+ 
+       
+    
+    }
+ 
+     
+}
+
+
+
+
+
+
+
